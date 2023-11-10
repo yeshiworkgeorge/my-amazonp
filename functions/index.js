@@ -33,7 +33,7 @@ app.post("/payments/create", async (request, response) => {
 		});
 	} catch (error) {
 		console.log(error.message);
-		response.status(500).send("something weng wrong!");
+		response.status(500).send("something went wrong!");
 	}
 });
 
