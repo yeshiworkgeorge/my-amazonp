@@ -59,7 +59,7 @@ function Payment() {
 				// paymentIntent = payment confirmation
 
 				db.collection("users")
-					.doc(user.uid)
+					.doc(user?.uid)
 					.collection("orders")
 					.doc(paymentIntent.id)
 					.set({
@@ -100,7 +100,7 @@ function Payment() {
 						<h3>Delivery Address</h3>
 					</div>
 					<div className="payment__address">
-						<p>{user.email}</p>
+						<p>{user?.email}</p>
 						<p>123 React Lane</p>
 						<p>Adiss Ababa, Ethiopia</p>
 					</div>
