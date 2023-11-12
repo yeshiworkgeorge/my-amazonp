@@ -60,7 +60,7 @@ function Payment() {
 
 				db.collection("users")
 					.doc(user?.uid)
-					.collection("orders")
+					.collection("Orders")
 					.doc(paymentIntent.id)
 					.set({
 						basket: basket,
@@ -76,7 +76,7 @@ function Payment() {
 					type: "EMPTY_BASKET",
 				});
 
-				navigate("/orders");
+				navigate("/Orders");
 			});
 	};
 
@@ -114,6 +114,7 @@ function Payment() {
 					<div className="payment__items">
 						{basket.map((item) => (
 							<CheckoutProduct
+								key={item.id}
 								id={item.id}
 								title={item.title}
 								image={item.image}

@@ -1,0 +1,72 @@
+[debug] [2023-11-12T16:48:35.614Z] ----------------------------------------------------------------------
+[debug] [2023-11-12T16:48:35.616Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ye1000\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting
+[debug] [2023-11-12T16:48:35.617Z] CLI Version:   12.7.0
+[debug] [2023-11-12T16:48:35.617Z] Platform:      win32
+[debug] [2023-11-12T16:48:35.617Z] Node Version:  v18.16.1
+[debug] [2023-11-12T16:48:35.618Z] Time:          Sun Nov 12 2023 08:48:35 GMT-0800 (Pacific Standard Time)
+[debug] [2023-11-12T16:48:35.619Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-11-12T16:48:35.791Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-12T16:48:35.792Z] > authorizing via signed-in user (yeshiworkgeorge@gmail.com)
+[debug] [2023-11-12T16:48:35.792Z] [iam] checking project pp-741c0 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-11-12T16:48:35.796Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/pp-741c0:testIamPermissions [none]
+[debug] [2023-11-12T16:48:35.796Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/pp-741c0:testIamPermissions x-goog-quota-user=projects/pp-741c0
+[debug] [2023-11-12T16:48:35.797Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/pp-741c0:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-11-12T16:48:39.615Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/pp-741c0:testIamPermissions 200
+[debug] [2023-11-12T16:48:39.616Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/pp-741c0:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-11-12T16:48:39.620Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/pp-741c0 [none]
+[debug] [2023-11-12T16:48:59.547Z] *** [apiv2] error from fetch(https://firebase.googleapis.com/v1beta1/projects/pp-741c0, {"headers":{},"method":"GET","signal":{}}): FetchError: request to https://firebase.googleapis.com/v1beta1/projects/pp-741c0 failed, reason: socket hang up
+[debug] [2023-11-12T16:48:59.548Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects/pp-741c0 (original: request to https://firebase.googleapis.com/v1beta1/projects/pp-741c0 failed, reason: socket hang up)
+[debug] [2023-11-12T16:49:01.233Z] FirebaseError: Failed to make request to https://firebase.googleapis.com/v1beta1/projects/pp-741c0
+    at RetryOperation._fn (C:\Users\ye1000\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:239:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project pp-741c0. Please make sure the project exists and your account has permission to access it.
+[debug] [2023-11-12T16:51:57.481Z] ----------------------------------------------------------------------
+[debug] [2023-11-12T16:51:57.519Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ye1000\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting
+[debug] [2023-11-12T16:51:57.520Z] CLI Version:   12.7.0
+[debug] [2023-11-12T16:51:57.520Z] Platform:      win32
+[debug] [2023-11-12T16:51:57.521Z] Node Version:  v18.16.1
+[debug] [2023-11-12T16:51:58.962Z] Time:          Sun Nov 12 2023 08:51:57 GMT-0800 (Pacific Standard Time)
+[debug] [2023-11-12T16:51:58.963Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-11-12T16:51:59.702Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-12T16:51:59.706Z] > authorizing via signed-in user (yeshiworkgeorge@gmail.com)
+[debug] [2023-11-12T16:51:59.707Z] [iam] checking project pp-741c0 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-11-12T16:51:59.822Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/pp-741c0:testIamPermissions [none]
+[debug] [2023-11-12T16:51:59.823Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/pp-741c0:testIamPermissions x-goog-quota-user=projects/pp-741c0
+[debug] [2023-11-12T16:51:59.825Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/pp-741c0:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-11-12T16:52:06.355Z] *** [apiv2] error from fetch(https://cloudresourcemanager.googleapis.com/v1/projects/pp-741c0:testIamPermissions, {"headers":{},"method":"POST","body":"{\"permissions\":[\"firebase.projects.get\",\"firebasehosting.sites.update\"]}"}): FetchError: request to https://cloudresourcemanager.googleapis.com/v1/projects/pp-741c0:testIamPermissions failed, reason: getaddrinfo ENOTFOUND cloudresourcemanager.googleapis.com
+[debug] [2023-11-12T16:52:06.358Z] [iam] error while checking permissions, command may fail: FirebaseError: Failed to make request to https://cloudresourcemanager.googleapis.com/v1/projects/pp-741c0:testIamPermissions
+[debug] [2023-11-12T16:52:06.366Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/pp-741c0 [none]
+[debug] [2023-11-12T16:52:07.552Z] *** [apiv2] error from fetch(https://firebase.googleapis.com/v1beta1/projects/pp-741c0, {"headers":{},"method":"GET","signal":{}}): FetchError: request to https://firebase.googleapis.com/v1beta1/projects/pp-741c0 failed, reason: getaddrinfo ENOTFOUND firebase.googleapis.com
+[debug] [2023-11-12T16:52:07.552Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects/pp-741c0 (original: request to https://firebase.googleapis.com/v1beta1/projects/pp-741c0 failed, reason: getaddrinfo ENOTFOUND firebase.googleapis.com)
+[debug] [2023-11-12T16:52:07.885Z] FirebaseError: Failed to make request to https://firebase.googleapis.com/v1beta1/projects/pp-741c0
+    at RetryOperation._fn (C:\Users\ye1000\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:239:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project pp-741c0. Please make sure the project exists and your account has permission to access it.
+[debug] [2023-11-12T17:01:12.520Z] ----------------------------------------------------------------------
+[debug] [2023-11-12T17:01:12.539Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ye1000\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting
+[debug] [2023-11-12T17:01:12.540Z] CLI Version:   12.7.0
+[debug] [2023-11-12T17:01:12.540Z] Platform:      win32
+[debug] [2023-11-12T17:01:12.540Z] Node Version:  v18.16.1
+[debug] [2023-11-12T17:01:12.759Z] Time:          Sun Nov 12 2023 09:01:12 GMT-0800 (Pacific Standard Time)
+[debug] [2023-11-12T17:01:12.759Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-11-12T17:01:13.015Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-12T17:01:13.016Z] > authorizing via signed-in user (yeshiworkgeorge@gmail.com)
+[debug] [2023-11-12T17:01:13.016Z] [iam] checking project pp-741c0 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-11-12T17:01:13.043Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/pp-741c0:testIamPermissions [none]
+[debug] [2023-11-12T17:01:13.043Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/pp-741c0:testIamPermissions x-goog-quota-user=projects/pp-741c0
+[debug] [2023-11-12T17:01:13.044Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/pp-741c0:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-11-12T17:01:16.747Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/pp-741c0:testIamPermissions 200
+[debug] [2023-11-12T17:01:16.748Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/pp-741c0:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-11-12T17:01:16.751Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/pp-741c0 [none]
+[debug] [2023-11-12T17:01:28.143Z] *** [apiv2] error from fetch(https://firebase.googleapis.com/v1beta1/projects/pp-741c0, {"headers":{},"method":"GET","signal":{}}): FetchError: request to https://firebase.googleapis.com/v1beta1/projects/pp-741c0 failed, reason: socket hang up
+[debug] [2023-11-12T17:01:28.145Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects/pp-741c0 (original: request to https://firebase.googleapis.com/v1beta1/projects/pp-741c0 failed, reason: socket hang up)
+[debug] [2023-11-12T17:01:29.186Z] FirebaseError: Failed to make request to https://firebase.googleapis.com/v1beta1/projects/pp-741c0
+    at RetryOperation._fn (C:\Users\ye1000\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:239:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project pp-741c0. Please make sure the project exists and your account has permission to access it.
